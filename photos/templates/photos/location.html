@@ -19,12 +19,37 @@
 </head>
 
 <body class="m-5">
-    <div class="container-fluid">
-        <nav class="navbar  fixed-top navbar-light bg-black">
-            <div class="container">
-                <span class="navbar-brand mb-0 h1 " style="color: white; text-align: left;">Photo Collage</span>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+
+                <div class="row">
+
+                    {% for photo in photos %}
+
+                    <div class="col-md-4">
+                        <div class="card my-2">
+                            <img class="image-thumbail" src="{{photo.image.url}}" alt="Card image cap">
+                            <div class="card-body">
+                                <small> <b>Location:</b> {{photo.location}}</small> <br>
+                                <small> <b>Category:</b> {{photo.category.name}}</small> <br>
+                                <small> <b>Description:</b> {{photo.description}}</small>
+                            </div>
+                            
+                        </div>
+                    </div>             
+
+                    {% empty %}
+                    <h3>No Photos... Recheck and try again</h3>
+
+                    {% endfor %}
+
+                </div>
+
             </div>
-        </nav>
+        </div>
+    </div>
+
 </body>
 
 </html>
