@@ -1,0 +1,11 @@
+ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+} 
+.image-thumbail{
+    height: 15em;
+}
+.modal-body img{
+    border-radius: 15px;
+}
