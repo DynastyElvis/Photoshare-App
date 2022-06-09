@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from .models import Category, Photo, Location
 
 
-# def gallery(request):#, category_id):
-#     category = request.GET.get('category')
+def gallery(request):#, category_id):
+    category = request.GET.get('category')
     
 
 def gallery(request):
@@ -63,27 +63,27 @@ def addPhoto(request):
     
     
     
-    # if request.method == 'POST':
-    #     data = request.POST
-    #     image = request.FILES.get('image')
+    if request.method == 'POST':
+        data = request.POST
+        image = request.FILES.get('image')
         
-    #     if data['category'] != 'none':
-    #         category = Category.objects.get(id=data['category'])          
-        
-            
-    #     elif data['category_new'] != '':
-    #         category,created = Category.objects.get_or_create(name=data['category_new'])           
+        if data['category'] != 'none':
+            category = Category.objects.get(id=data['category'])          
         
             
-    #     else:
-    #         category = None
+        elif data['category_new'] != '':
+            category,created = Category.objects.get_or_create(name=data['category_new'])           
+        
             
-    #     photo = Photo.objects.create(
-    #         category=category,                      
-    #         description=data['description'],            
-    #         image=image,
-    #     )
-    #     return redirect ('gallery')
+        else:
+            category = None
+            
+        photo = Photo.objects.create(
+            category=category,                      
+            description=data['description'],            
+            image=image,
+        )
+        return redirect ('gallery')
             
     context = {'categories': categories}    
     return render(request,'photos/add.html', context)
