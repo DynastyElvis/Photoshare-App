@@ -24,7 +24,86 @@
 
 </head>
 <body>
+
+<!-- 
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+            <div class="col-md-4">
+                <img src="https://picsum.photos/200/300" alt="">
+            </div>
+        </div>
+    </div> -->
+
+    <div class="container-fluid">
+         <nav class="navbar  fixed-top navbar-light bg-black">
+             <div class="container">
+                 <span class="navbar-brand mb-0 h1 " style="color: white; text-align: left;">Photo Collage</span>
              </div>
+         </nav>
+    </div>
+   
+   
+
+                    </ul>
+                </div>
+
+                <!-- <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://picsum.photos/200/300" alt="">
+                        </div>
+                    </div>
+                </div>
+             -->
+            </div>
+            <div class="col-md-9">
+                
+                <div class="row">
+
+                    {% for photo in photos %}
+
+                    <div class="col-md-4">
+                        <div class="card my-2">
+                            <img class="image-thumbail"
+                                src="{{photo.image.url}}"
+                                alt="Card image cap">
+                            <div class="card-body">
+                               
+                            </div>
+                            <button type="button" class="btn btn-outline-dark btn-sm m-1" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal{{photo.id}}">
+                                Photo Details
+                            </button>
+                            
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/300" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/300" alt="">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="https://picsum.photos/200/300" alt="">
+                            </div>
+                        </div>
+                    </div>
                                     -->
 
                     <!-- Modal -->
