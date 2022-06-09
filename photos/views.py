@@ -21,6 +21,7 @@ def gallery(request):
     
     return render(request,'photos/gallery.html', context)
 
+
 def gallery(request):#, category_id):
     category = request.GET.get('category')
     
