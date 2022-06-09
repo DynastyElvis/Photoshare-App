@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from .models import Category, Photo, Location
 
 
-def gallery(request):#, category_id):
-    category = request.GET.get('category')
+# def gallery(request):#, category_id):
+#     category = request.GET.get('category')
     
 
 def gallery(request):
