@@ -38,3 +38,13 @@ class Location(models.Model):
         return self.name   
 
     
+class Photo(models.Model):
+    category = models.ForeignKey(Category,on_delete=models.SET_NULL, null=True, blank=True)
+    location = models.ForeignKey(Location,on_delete=models.SET_NULL, null=True, blank=False)
+    image = models.ImageField(null=False,blank=False)
+    description = models.TextField()
+    
+    def __str__(self):
+        return self.description
+    
+
