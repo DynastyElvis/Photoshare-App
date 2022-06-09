@@ -79,7 +79,66 @@
 </body>
 </html> -->
 
+<body class="m-5">
+    <div class="container">
+        <div class="row justify-content-centre">
+            <div class="col-md-3">
+                <a href=" {% url 'gallery' %}" class="btn btn-dark my-3"><i
+                        class="bi bi-arrow-left-circle-fill"></i> &nbsp; Home</a>
+            </div>
+            <div class="col-md-6 m-3">
+                 <div class="col">
+                     <h2>Add Photo</h2>                     
 
+                     <div class="card">
+
+                         <form method="POST" action="" enctype="multipart/form-data">
+
+                             {% csrf_token %}
+
+
+                             <div class="form-group m-3">
+                                 <label>Description</label>
+                                 <input name="description" type="text" class="form-control"
+                                     placeholder="add description" required>
+                             </div>
+
+                              
+
+                             <div class="form-group m-3">
+                                 <label>Select category</label>
+                                 <select name="category" class="form-control">
+                                     <option value="none">Select Category...</option>
+
+                                     {% for category in categories %}
+                                     <option value="{{category.id}}">{{category.name}}</option>
+
+                                     {% endfor %}
+                                 </select>
+                             </div>
+
+                             <div class="form-group m-3">
+                                 <label>Create new Category</label>
+                                 <input name="category_new" type="text" class="form-control"
+                                     placeholder="create a new category">
+                             </div>
+
+                             <div class="form-group m-3">
+                                 <label>Upload Image</label> <br>
+                                 <input name="image" type="file" class="form-control-file" required>
+                             </div>
+                             <button type="submit" class="btn btn-dark btn-sm m-3">Submit</button>
+                         </form>
+                     </div>
+                 </div>
+            </div>
+            <div class="col-md-3"></div>
+
+           
+            
+
+        </div>
+    </div>
     
 </body>
 </html>
