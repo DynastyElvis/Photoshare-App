@@ -21,22 +21,22 @@ def gallery(request):
     
     return render(request,'photos/gallery.html', context)
 
-# def gallery(request):#, category_id):
-#     category = request.GET.get('category')
+def gallery(request):#, category_id):
+    category = request.GET.get('category')
     
     
-#     if category == 'None':
-#         photos = Photo.objects.all()
+    if category == 'None':
+        photos = Photo.objects.all()
 
 
-#     else:
-#         photos = Photo.objects.filter(category__name=category)
+    else:
+        photos = Photo.objects.filter(category__name=category)
 
     
-#     categories = Category.objects.all()
-#     photos = Photo.objects.all()
+    categories = Category.objects.all()
+    photos = Photo.objects.all()
     
-#     context = {'categories': categories, 'photos': photos}
-#     return render(request, 'photos/gallery.html', context)
+    context = {'categories': categories, 'photos': photos}
+    return render(request, 'photos/gallery.html', context)
 
 
