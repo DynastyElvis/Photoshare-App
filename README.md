@@ -2,35 +2,6 @@
 A personal gallery application that you display your photos for others to see, with categories, image name, descriptions and foreign key.
 
 
-asgiref==3.5.2
-backports.zoneinfo==0.2.1
-certifi==2022.5.18.1
-charset-normalizer==2.0.12
-dj-database-url==0.5.0
-Django==4.0.5
-django-crispy-forms==1.14.0
-django-db==0.0.7
-django-heroku==0.3.1
-django-resized==1.0.0
-django-tinymce==3.4.0
-gunicorn==20.1.0
-html2text==2020.1.16
-idna==3.3
-numpy==1.22.4
-Pillow==9.1.1
-postgres==4.0
-psycopg2==2.9.3
-psycopg2-binary==2.9.3
-psycopg2-pool==1.1
-PyMySQL==1.0.2
-python-decouple==3.6
-requests==2.27.1
-sqlparse==0.4.2
-urllib3==1.26.9
-whitenoise==6.2.0
-
-
-
 
 ## Author  
   
@@ -38,7 +9,7 @@ whitenoise==6.2.0
   
  
 ##  Live Link  
- Click [View Site](https://elvis-gallery.herokuapp.com/)  to visit the site
+ Click [View Site](https://elvis-collage.herokuapp.com/)  to visit the site
 
 
 [Go Back to the top](#Photoshare)
