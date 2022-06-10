@@ -16,7 +16,6 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -24,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-l4lr=ogt)-!cot2(mv#0#0$e6=2_&(%3+v-rp*jca4!hfbu&-%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://elvis-collage.herokuapp.com/', '127.0.0.1']
+ALLOWED_HOSTS = ['phoroozz.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
