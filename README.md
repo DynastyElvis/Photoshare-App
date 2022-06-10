@@ -12,7 +12,22 @@ A personal gallery application that you display your photos for others to see, w
 
 [Go Back to the top](#Photoshare)
 
+## Screenshots 
+###### Home Landing-Page
  
+<img src="https://raw.githubusercontent.com/DynastyElvis/Photoshare-App/master/static/images/Screenshot%20from%202022-06-10%2011-24-59.png">
+ 
+ ###### Open image to view
+ <img src="https://raw.githubusercontent.com/DynastyElvis/Photoshare/main/photoshare/static/images/Screenshot%20from%202022-05-29%2019-52-34.png"> 
+
+ ###### Add Image to the Collage Gallery
+ <img src="https://raw.githubusercontent.com/DynastyElvis/Photoshare/main/photoshare/static/images/Screenshot%20from%202022-05-29%2019-52-43.png">
+
+ ###### ADMIN Dashboard to manage the pictures
+ <img src="https://raw.githubusercontent.com/DynastyElvis/Photoshare/main/photoshare/static/images/Screenshot%20from%202022-05-30%2017-45-23.png">
+
+
+
 ## User Story  
   
 * View different photos that interest them  
