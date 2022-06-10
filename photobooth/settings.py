@@ -86,15 +86,6 @@ DATABASES = {
     }
 }
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'neighbourhood',
-#         'USER': 'annalis',
-#     'PASSWORD':'Ann123',
-#     }
-# }
-
 
 
 # Password validation
