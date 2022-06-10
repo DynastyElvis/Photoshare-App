@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-l4lr=ogt)-!cot2(mv#0#0$e6=2_&(%3+v-rp*jca4!hfbu&-%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['phoroozz.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['https://elvis-gallery.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -43,9 +43,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -127,6 +127,8 @@ MEDIA_URL = '/images/'
 STATICFILES_DIRS = [  
     BASE_DIR / 'static'
 ]
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_ROOT = BASE_DIR / 'static/images'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
